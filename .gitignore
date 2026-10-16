@@ -1,0 +1,7 @@
+node_modules/
+dist/
+reference/
+
+# local dev screenshots written by scripts/{e2e,probe}.mjs
+/e2e-*.png
+/probe*.png

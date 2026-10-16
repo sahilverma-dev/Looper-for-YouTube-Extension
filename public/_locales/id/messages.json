@@ -1,0 +1,249 @@
+{
+    "chrome_web_store": {
+        "description": "Chrome Web Store",
+        "message": "Chrome Web Store"
+    },
+    "extension_description": {
+        "description": "description shown in Chrome Web Store, maximum 130 characters",
+        "message": "Putar ulang video YouTube secara otomatis hanya dengan SATU-KLIK! Bisa juga mengatur jumlah pengulangan dan bagian yang diulang."
+    },
+    "extension_name": {
+        "description": "do not translate this",
+        "message": "Looper for YouTube"
+    },
+	"language": {
+        "description": "language, eg. Chinese - 中文, French - Français",
+        "message": "Indonesian"
+    },
+    "message_saved": {
+        "description": "message shown after saving options",
+        "message": "Pengaturan telah tersimpan."
+    },
+    "option_advanced_panel": {
+        "description": "Checkbox, toggle loop panel for setting loop times and portion",
+        "message": "Tampilkan pengaturan lanjutan (ulang sebanyak, ulang sebagian)"
+    },
+    "option_auto": {
+        "description": "default/'auto' quality base on youtube selection",
+        "message": "Standar (Otomatis)"
+    },
+    "option_auto_loop": {
+        "description": "Radiobox, allow loop auto-starts when opening any clip",
+        "message": "Putar ulang semua video secara otomatis"
+    },
+    "option_auto_player_size": {
+        "description": "Checkbox, set player size. (Default Youtube player size as) Small/Large/Larger",
+        "message": "Atur otomatis ukuran pemutar video menjadi"
+    },
+    "option_auto_quality": {
+        "description": "Selectbox, set default video quality",
+        "message": "Atur otomatis kualitas video menjadi"
+    },
+    "option_button": {
+        "description": "Selectbox, set visible button content",
+        "message": "Tombol putar ulang menampilkan"
+    },
+    "option_button_icon": {
+        "description": "selection option, icon only",
+        "message": "ikon saja"
+    },
+    "option_button_iconandtext": {
+        "description": "selection option, icon and text",
+        "message": "ikon dan teks"
+    },
+    "option_button_text": {
+        "description": "selection option, text only",
+        "message": "teks saja"
+    },
+    "option_default_show_panel": {
+        "description": "Checkbox, check to show the LOOP panel instead of ABOUT tab upon page load, applies only when Auto Loop is enabled or URL parameter is set",
+        "message": "Tampilkan pengaturan putar ulang daripada tab 'About' saat memuat halaman baru (hanya berpengaruh jika fitur putar loop aktif atau parameter URL telah diatur)"
+    },
+    "option_full_size": {
+        "description": "full-window player size", 
+        "message": "Layar Penuh"
+    },
+    "option_keyboard_shortcut_loop": {
+        "description": "Checkbox, keyboard shortcut for loop",
+        "message": "Aktifkan pintasan keyboard untuk mengaktifkan/menonaktifkan fitur putar ulang"
+    },
+    "option_keyboard_shortcut_pause": {
+        "description": "Checkbox, spacebar as keyboard shortcut for play/pause video, applies to anywhere on Youtube pages",
+        "message": "Jadikan tombol 'spasi' sebagai cara cepat untuk memutar/menjeda video"
+    },
+    "option_large_size": {
+        "description": "large size", 
+        "message": "Besar"
+    },
+    "option_larger_size": {
+        "description": "larger size",
+        "message": "Sangat Besar"
+    },
+    "option_manual_loop": {
+        "description": "Radiobox, start loop manually for every clip",
+        "message": "Putar ulang video dengan mengaktifkan fitur putar ulang secara manual"
+    },
+    "option_savestate_loop": {
+        "description": "Radiobox, allow loop auto-starts when opening any clip if state on previous video is looping",
+        "message": "Putar ulang video secara otomatis jika fitur putar ulang diaktifkan pada video sebelumnya"
+    },
+    "option_show_changelog": {
+        "description": "Checkbox, show changelog page when user opens YouTube after updating extension",
+        "message": "Tampilkan catatan perubahan saat ekstensi Looper for YouTube selesai diperbarui"
+    },
+    "option_small_size": {
+        "description": "small size",
+        "message": "Kecil"
+    },
+    "script_and": {
+        "description": "Played 1 times ( and ) Played 1 minutes",
+        "message": " dan "
+    },
+    "script_button_hover": {
+        "description": "hover tips, loop button",
+        "message": "Putar ulang video ini secara otomatis"
+    },
+    "script_button_hover_disabled_watchqueue": {
+        "description": "hover tips, loop button, google cast is not working",
+        "message": "Tidak bekerja pada watch queue"
+    },
+    "script_button_text": {
+        "description": "loop button text",
+        "message": "Putar Ulang"
+    },
+    "script_continue_to_play_playlist": {
+        "description": "playlist option button, continue to play the playlist",
+        "message": "Lalu putar video selanjutnya"
+    },
+    "script_double_click_to_get_current_time": {
+        "description": "hover tips, double click to get current time", 
+        "message": "Kilk dua kali untuk memilih waktu video saat ini"
+    },
+    "script_double_click_to_start_loop_in_portion": {
+        "description": "hover tips, double click to start loop this portion",
+        "message": "Kilk dua kali untuk memutar ulang bagian ini"
+    },
+    "script_from": {
+        "description": "loop portion, from",
+        "message": "dari "
+    },
+    "script_hide_info": {
+        "description": "hide information",
+        "message": "Sembunyikan tulisan ini"
+    },
+    "script_information": {
+        "description": "Promotion on options page for user",
+        "message": "Apakah kamu tahu bahwa kamu dapat mengatur fitur putar ulang otomatis dan fitur pilih kualitas video otomatis di halaman pengaturan?"
+    },
+    "script_loop_for_times": {
+        "description": "Loop for, number of times",
+        "message": "Ulang sebanyak "
+    },
+    "script_loop_for_minutes": {
+        "description": "Loop for, number of minutes",
+        "message": "Ulang selama "
+    },
+    "script_loop_in_portion_end": {
+        "description": "loop in a portion, end string",
+        "message": ""
+    },
+    "script_loop_in_portion_start": {
+        "description": "loop in a portion, start string",
+        "message": "Ulang sebagian: "
+    },
+    "script_minutes_loop": {
+        "description": "Loop for x (minutes)",
+        "message": " menit"
+    },
+    "script_minutes_played": {
+        "description": "Played x (minutes)",
+        "message": " menit"
+    },
+    "script_options": {
+        "description": "options page link text",
+        "message": "Pengaturan"
+    },
+    "script_played_minutes": {
+        "description": "(Played) x minutes",
+        "message": "Telah diputar ulang selama "
+    },
+    "script_played_times": {
+        "description": "(Played) x times",
+        "message": "Telah diputar ulang sebanyak "
+    },
+    "script_stop_video": {
+        "description": "playlist option button, stop Video after finish loop number of times",
+        "message": "Lalu hentikan video"
+    },
+    "script_times_loop": {
+        "description": "Loop for x (times)",
+        "message": " kali"
+    },
+    "script_times_played": {
+        "description": "Played x (times)",
+        "message": " kali"
+    },
+    "script_to": {
+        "description": "loop in a portion, to",
+        "message": " sampai "
+    },
+    "text_experimental": {
+        "description": "experimental features",
+        "message": " (*masih dalam percobaan)"
+    },
+    "text_extension_by": {
+        "description": "Please do not change the name of the extension, just translate the term, by",
+        "message": "Looper for YouTube oleh "
+    },
+    "text_feedback": {
+        "description": "Encourage users leaving reviews on chrome web store",
+        "message": "Silakan berikan kami ulasan dan 5 bintang di Chrome Web Store jika ekstensi Looper for YouTube ini telah berhasil membantu kamu untuk memutar ulang video YouTube dengan mudah."
+    },
+    "text_full_changelog": {
+        "description": "link to change-log page",
+        "message": "Klik di sini untuk melihat catatan perubahan yang lengkap."
+    },
+    "text_not_compatible": {
+        "description": "Not compatible with other extensions for YouTube that have similar function to use at the same time.",
+        "message": "Tidak kompatibel dengan ekstensi YouTube lain yang memiliki fitur serupa."
+    },
+    "text_outdate_chrome": {
+        "description": "as chrome.storage api is not available in version 19 or below, options saving is not working.",
+        "message": "Pengaturan di atas tidak akan berpengaruh pada Chrome versi 19 atau di bawahnya."
+    },
+    "text_refresh_page": {
+        "description": "After options are saved, refresh and open YouTube page.",
+        "message": "Setelah pengaturan tersimpan, aktifkan ulang ekstensi, lalu buka halaman YouTube."
+    },
+    "text_support": {
+        "description": "please keep those html tags",
+        "message": "Jika kamu ingin melaporkan masalah ataupun memberikan saran untuk ekstensi ini, kamu dapat menyampaikannya melalui <a id=\"support_page\" href=\"#\" target=\"_blank\">Halaman Dukungan di Chrome Web Store</a> atau dengan mengirim email ke looperforyoutube@alvinhkh.com (dalam bahasa Inggris)"
+    },
+    "text_tweet": {
+        "description": "maximum 100 characters",
+        "message": "Looper for YouTube, ekstensi Chrome keren untuk memutar ulang video YouTube secara otomatis."
+    },
+    "text_version": {
+        "description": "(Version) 1.0.0",
+        "message": "Versi"
+    },
+    "text_welcome_translation": {
+        "message": "Dipersilakan untuk menerjemahkan ke dalam bahasa lain!"
+    },
+    "title_changelog": {
+        "description": "Change-log (in English)",
+        "message": "Catatan Perubahan"
+    },
+    "title_extra_features": {
+        "description": "Extra Features",
+        "message": "Fitur Tambahan"
+    },
+    "title_feedback": {
+        "description": "Give us feedback",
+        "message": "Berikan kami ulasan dan \u2605\u2605\u2605\u2605\u2605"
+    },
+    "title_share": {
+        "description": "Encourage sharing extension on social media",
+        "message": "Ayo bagikan ekstensi Looper for YouTube ini ke teman-teman kamu agar mereka dapat memutar ulang video YouTube dengan mudah seperti kamu :)"
+    }
+}
