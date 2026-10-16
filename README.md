@@ -4,6 +4,18 @@ A from-scratch, modular rewrite of the **Looper for YouTube** Chrome extension
 (v5.18.2), with one specific goal in mind: **YouTube's miniplayer must keep
 working.**
 
+> **Not published on the Chrome Web Store.** This is a personal rewrite. It is
+> not, and will not be, listed on the Chrome Web Store — install it locally by
+> loading the unpacked build (see [Build / test / load](#build--test--load)).
+
+## Why this exists
+
+The Chrome Web Store version of Looper for YouTube (5.18.2) broke YouTube for
+me: the miniplayer stopped working, and the Loop button rendered wrong or
+vanished. There was no upstream fix and no sign of one coming, so this is a
+from-scratch rewrite that keeps the features I actually use and fixes the
+playback handling at the root rather than patching around it.
+
 ---
 
 ## The bug
@@ -121,8 +133,15 @@ unpacked** → select the `dist/` folder.
   loop-in-portion with a draggable range, playlist continue-after-limit,
   auto-loop (on/off/save-state), URL params (`loop`, `timer`, `start`, `end`),
   keyboard shortcut, Auto quality, i18n, options sync, debug flag.
-- **Reused verbatim:** `_locales/*`, `options.html/js/css`, `inject_style.css`,
-  icon — assets, not logic.
+- **Reused assets:** `_locales/*`, `options.css`, `options_input.css`,
+  `inject_style.css`, and the icon — styling and assets, not logic.
+
+## Credits
+
+Looper for YouTube was originally created by **AlvinHKH** and published on the
+Chrome Web Store. The original idea, the feature set, and the UI are his work.
+This repository is an independent, from-scratch rewrite of that extension, and
+is not affiliated with or endorsed by the original author.
 
 ## Testing checklist (manual)
 
