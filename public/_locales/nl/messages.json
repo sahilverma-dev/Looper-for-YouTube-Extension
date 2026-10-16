@@ -190,11 +190,7 @@
     "text_refresh_page": {
         "description": "After options are saved, refresh and open YouTube page.", 
         "message": "Ververs en open de YouTube pagina nadat de opties zijn opgeslagen."
-    }, 
-    "text_support": {
-        "description": "please keep those html tags", 
-        "message": "Meld problemen of suggesties alstublieft op <a id=\"support_page\" href=\"#\" target=\"_blank\">Support Page on CWS</a> of mail naar looperforyoutube@alvinhkh.com (in het Engels)"
-    }, 
+    },  
     "text_tweet": {
         "description": "maximum 100 characters", 
         "message": "Looper for YouTube: een geweldige Chrome extensie die video´s herhaalt met één klik op de knop"

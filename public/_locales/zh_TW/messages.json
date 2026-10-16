@@ -179,10 +179,7 @@
     }, 
     "text_refresh_page": {
         "message": "保存您的選項後，需要重新整理已經開啟的 YouTube 頁面"
-    }, 
-    "text_support": {
-        "message": "<br/>如果有任何問題及建議，請到 <a id='support_page' href='#' target='_blank'>CWS 的支援頁面</a><br/>或 電郵至 looperforyoutube@alvinhkh.com"
-    }, 
+    },  
     "text_tweet": {
         "message": "Looper for YouTube，超棒的 Chrome 擴充功能，讓我一鍵自動重播 YouTube 影片"
     }, 

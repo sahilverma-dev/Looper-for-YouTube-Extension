@@ -215,10 +215,6 @@
         "description": "After options are saved, refresh and open YouTube page.",
         "message": "După ce opțiunile au fost salvate, reîmprospătați pagina și deschideți YouTube."
     },
-    "text_support": {
-        "description": "please keep those html tags",
-        "message": "Dacă aveți probleme sau sugestii accesați <a id=\"support_page\" href=\"#\" target=\"_blank\">Pagina de Suport CWS</a> sau trimiteți un e-mail la looperforyoutube@alvinhkh.com (în engleză)"
-    },
     "text_tweet": {
         "description": "maximum 100 characters",
         "message": "Looper for YouTube, o extensie Google Chrome care permite repetarea videoclipurilor cu un singur click."

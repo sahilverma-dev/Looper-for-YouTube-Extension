@@ -215,10 +215,6 @@
         "description": "After options are saved, refresh and open YouTube page.",
         "message": "After options are saved, refresh and open YouTube page."
     },
-    "text_support": {
-        "description": "please keep those html tags",
-        "message": "Any problems or suggestions please submit to <a id=\"support_page\" href=\"#\" target=\"_blank\">Support Page on CWS</a> or email to looperforyoutube@alvinhkh.com (in English)"
-    },
     "text_tweet": {
         "description": "maximum 100 characters",
         "message": "Looper for YouTube, awesome Chrome extension that let me loop video with one-click."

@@ -166,10 +166,7 @@
     }, 
     "text_refresh_page": {
         "message": "Miután mentetted a változtatásokat, frissítsd a nyitott YouTube oldalakat."
-    }, 
-    "text_support": {
-        "message": "Miden problémát és javaslatot kérem küldje el a <a id=\"support_page\" href=\"#\" target=\"_blank\">Chrome internetes áruház support oldalán</a> vagy emailben a looperforyoutube@alvinhkh.com címre (angolul)"
-    }, 
+    },  
     "text_tweet": {
         "message": "YouTube ismétlő - egy szuper Chrome bővítmény, hiszen egyetlen kattintással ismételhetem a videókat"
     }, 

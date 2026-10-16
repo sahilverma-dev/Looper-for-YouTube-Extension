@@ -311,9 +311,6 @@ import { getUrlVar, rewriteUrl, hadParamOnLoad } from './util/url.js';
       store.setItem(SETTING_KEYS.quality, data.quality);
       quality.apply();
     }
-    if (data.show_changelog !== undefined) {
-      store.setItem('yt-loop-show-changelog', data.show_changelog ? 'true' : 'false');
-    }
     if (data.oldchrome !== undefined) {
       document.getElementById('options-page-link')?.style.setProperty('display', 'none');
       document.getElementById('loop-panel-tips-container')?.style.setProperty('display', 'none');

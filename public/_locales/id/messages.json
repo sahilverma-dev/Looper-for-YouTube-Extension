@@ -215,10 +215,6 @@
         "description": "After options are saved, refresh and open YouTube page.",
         "message": "Setelah pengaturan tersimpan, aktifkan ulang ekstensi, lalu buka halaman YouTube."
     },
-    "text_support": {
-        "description": "please keep those html tags",
-        "message": "Jika kamu ingin melaporkan masalah ataupun memberikan saran untuk ekstensi ini, kamu dapat menyampaikannya melalui <a id=\"support_page\" href=\"#\" target=\"_blank\">Halaman Dukungan di Chrome Web Store</a> atau dengan mengirim email ke looperforyoutube@alvinhkh.com (dalam bahasa Inggris)"
-    },
     "text_tweet": {
         "description": "maximum 100 characters",
         "message": "Looper for YouTube, ekstensi Chrome keren untuk memutar ulang video YouTube secara otomatis."

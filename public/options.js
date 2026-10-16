@@ -79,9 +79,6 @@ to_be_translate = {
 	"text_experimental": {
 		"type": "id"
 	},
-	"option_show_changelog": {
-		"type": "option"
-	},
 	"text_not_compatible": {
 		"type": "id"
 	},
@@ -205,8 +202,6 @@ try {
 				document.getElementById(key).checked = (newValue == 'true');
 			if (key == 'ytQuality' && document.getElementById(key))
 				document.getElementById(key).value = newValue;
-			if (key == 'option_show_changelog' && document.getElementById(key))
-				document.getElementById(key).checked = (newValue == 'true');
 		}
 	});
 	chrome.storage.sync.get(null, function(value){
@@ -251,8 +246,6 @@ try {
 				sessionStorage['ytQuality'] = 'disabled'; 
 				break;
 		}
-		sessionStorage['option_show_changelog'] = value['option_show_changelog'] ? ( value['option_show_changelog']=='false' ? 'false' : 'true' ) : 'true';
-		
 		// Reset Sync Storage
 		chrome.storage.sync.clear();
 		chrome.storage.sync.set({
@@ -261,16 +254,12 @@ try {
 			ytShortcut: sessionStorage['ytShortcut'],
 			ytShortcutKey: sessionStorage['ytShortcutKey'],
 			ytLoopPanel: sessionStorage['ytLoopPanel'],
-			ytQuality: sessionStorage['ytQuality'],
-			option_show_changelog: sessionStorage['option_show_changelog']
+			ytQuality: sessionStorage['ytQuality']
 		}, function(){});
 	});
 } catch (e) {
 	console.log('ERROR: YOUR BROWSER DO NOT SUPPORT CHROME.STORAGE API');
 }
-
-// Links
-document.getElementById('support_page').href = 'http://www.alvinhkh.com/looperforyoutube/support';
 
 // Click Actions - Save Options
 document.getElementById('option_loop_manual').addEventListener ('click', function(){
@@ -349,13 +338,6 @@ document.getElementById('ytQuality').addEventListener ('change', function(){
 	}
 	if(chrome.storage) chrome.storage.sync.set({ytQuality: newValue.toString()}, showMessage);
 }, false);
-document.getElementById('option_show_changelog').addEventListener ('click', function(){
-	var id = 'option_show_changelog',
-		newValue = document.getElementById(id).checked;
-	if (!document.getElementById(id)) return false;
-	if(chrome.storage) chrome.storage.sync.set({option_show_changelog: newValue.toString()}, showMessage);
-}, false);
-
 if (typeof ( chrome.runtime ) == 'object' && typeof ( chrome.runtime.getManifest ) == 'function') {
 	// Get Version Number
 	document.getElementById('version').innerText = chrome.runtime.getManifest().version;

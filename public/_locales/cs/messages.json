@@ -190,11 +190,7 @@
     "text_refresh_page": {
         "description": "After you save your options, refresh opened YouTube page.", 
         "message": "Po uložení vašeho nastavení obnovte otevřenou stránku YouTube."
-    }, 
-    "text_support": {
-        "description": "please keep those html tags", 
-        "message": "Jakékoliv problémy a stížnosti zasílejte na <a id=\"support_page\" href=\"#\" target=\"_blank\">Podpora CWS</a> nebo na email looperforyoutube@alvinhkh.com (v angličtině)."
-    }, 
+    },  
     "text_tweet": {
         "description": "maximum of 100 characters", 
         "message": "Looper for YouTube, úžasné chromové rozšíření, které vám umožní přehrávání videí jedním klikem."

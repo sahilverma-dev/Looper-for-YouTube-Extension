@@ -215,10 +215,6 @@
         "description": "After options are saved, refresh and open YouTube page.",
         "message": "Ayarlarınızı kaydettikten sonra, sayfayı yenileyin ve YouTube'u tekrar açın"
     },
-    "text_support": {
-        "description": "please keep those html tags",
-        "message": "Herhangi bir problem veya öneri için <a id=\"support_page\" href=\"#\" target=\"_blank\">Chrome Web Mağazası Yardım sayfası</a> na gönderin veya looperforyoutube@alvinhkh.com (İngilizce) e-mail adresine mail atın"
-    },
     "text_tweet": {
         "description": "maximum 100 characters",
         "message": "Looper for Youtube, videoları tek tık ile tekrarlatmaya yarayan mükemmel bir Chrome eklentisi."

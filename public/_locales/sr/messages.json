@@ -215,10 +215,6 @@
         "description": "After options are saved, refresh and open YouTube page.",
         "message": "Posle čuvanja opcija osveži i otvori YouTube stranicu."
     },
-    "text_support": {
-        "description": "please keep those html tags",
-        "message": "U slučaju bilo kakvih problema ili ako imate neki predlog molimo vas da to pošaljete na <a id=\"support_page\" href=\"#\" target=\"_blank\">Support Page on CWS</a> ili pošaljite na looperforyoutube@alvinhkh.com (na engleskom)"
-    },
     "text_tweet": {
         "description": "maximum 100 characters",
         "message": "Looper for YouTube, fenomenalno Chrome proširenje koje omogućuje ponavljanje videa jednim klikom."

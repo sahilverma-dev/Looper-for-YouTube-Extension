@@ -215,10 +215,6 @@
         "description": "After options are saved, refresh and open YouTube page.",
         "message": "После того как настройки были сохранены, обновите и откройте страницу YouTube."
     },
-    "text_support": {
-        "description": "please keep those html tags",
-        "message": "При люой проблеме или предложении, пожалуйста, пишите <a id=\"support_page\" href=\"#\" target=\"_blank\">Страницу поддержки на сайте</a> или электронную почту looperforyoutube@alvinhkh.com (на английском языке)"
-    },
     "text_tweet": {
         "description": "maximum 100 characters",
         "message": "Looper for YouTube, удивительное расширение для Chrome, позволяющее зациклить видео одним кликом."

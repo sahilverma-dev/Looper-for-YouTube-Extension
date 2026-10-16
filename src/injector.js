@@ -6,22 +6,6 @@
  * page script needs.
  */
 
-const CHANGELOG_URL = 'https://www.alvinhkh.com/looperforyoutube/changelog/updated';
-
-// --- changelog on update ----------------------------------------------------
-if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.id) {
-  const thisVersion = chrome.runtime.getManifest().version;
-  chrome.storage.local.get(['yt-loop-version'], (result) => {
-    if (result['yt-loop-version'] === thisVersion) return;
-    chrome.storage.local.set({ 'yt-loop-version': thisVersion });
-    chrome.storage.sync.get(['option_show_changelog'], (sync) => {
-      if (sync['option_show_changelog'] !== 'false' && sync['option_show_changelog'] !== false) {
-        window.open(CHANGELOG_URL, 'changelogWindow');
-      }
-    });
-  });
-}
-
 // --- inject the page script -------------------------------------------------
 const pageScript = document.createElement('script');
 pageScript.src = chrome.runtime.getURL('contentscript.js');
@@ -42,7 +26,6 @@ function postOptions() {
         shortcutKey: 'p',
         panel: true,
         quality: 'disabled',
-        show_changelog: true,
         oldchrome: true,
       },
       '*',
@@ -62,7 +45,6 @@ function postOptions() {
             : 'p',
         panel: value['ytLoopPanel'] ? value['ytLoopPanel'] !== 'false' : true,
         quality: value['ytQuality'] ? value['ytQuality'] : 'disabled',
-        show_changelog: value['option_show_changelog'] ? value['option_show_changelog'] !== 'false' : true,
       },
       '*',
     );
@@ -93,9 +75,6 @@ if (chrome.storage && chrome.storage.onChanged) {
           break;
         case 'ytQuality':
           option.quality = change.newValue || 'disabled';
-          break;
-        case 'option_show_changelog':
-          option.show_changelog = change.newValue !== 'false';
           break;
         default:
           continue;

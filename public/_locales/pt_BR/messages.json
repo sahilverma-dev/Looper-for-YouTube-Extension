@@ -164,10 +164,7 @@
     }, 
     "text_refresh_page": {
         "message": "Após salvar suas opções, atualize a página do YouTube aberta."
-    }, 
-    "text_support": {
-        "message": "Qualquer problema ou sugestão vá para a <a id='support_page' href='#' target='_blank'>Página de Suporte na CWS</a> ou mande um email para looperforyoutube@alvinhkh.com (em inglês)"
-    }, 
+    },  
     "text_tweet": {
         "message": "Looper for YouTube, uma incrível extensão para o Chrome que me permite deixar vídeos em loop com um clique"
     }, 

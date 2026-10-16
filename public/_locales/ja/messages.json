@@ -215,10 +215,6 @@
         "description": "After options are saved, refresh and open YouTube page.",
         "message": "設定を保存したら、YouTubeを再読み込みしてください。"
     },
-    "text_support": {
-        "description": "please keep those html tags",
-        "message": "何か問題点や提案がございましたら、<a id=\"support_page\" href=\"#\" target=\"_blank\">ウェブストア上のサポートページ</a>、またはlooperforyoutube@alvinhkh.com（英語）まで"
-    },
     "text_tweet": {
         "description": "maximum 100 characters",
         "message": "Looper for YouTubeは、YouTubeの動画をワンクリックでループ再生を可能にする、素晴らしい拡張機能です。"

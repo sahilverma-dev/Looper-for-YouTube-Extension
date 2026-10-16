@@ -215,10 +215,6 @@
         "description": "After options are saved, refresh and open YouTube page.",
         "message": "Po zapisaniu ustawień, odśwież i otwórz stronę YouTube."
     },
-    "text_support": {
-        "description": "please keep those html tags",
-        "message": "Jakiekolwiek problemy lub sugestie możesz zgłosić tutaj <a id=\"support_page\" href=\"#\" target=\"_blank\">Support Page on CWS</a> lub wyślij e-mail na adres looperforyoutube@alvinhkh.com (po Angielsku)"
-    },
     "text_tweet": {
         "description": "maximum 100 characters",
         "message": "Looper for YouTube, niesamowite rozszerzenie, dzięki któremu zapętlam filmy jednym kliknięciem."

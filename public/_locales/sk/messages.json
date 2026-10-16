@@ -166,10 +166,7 @@
     }, 
     "text_refresh_page": {
         "message": "Po uložení nastavení obnovte otvorené YouTube stránky."
-    }, 
-    "text_support": {
-        "message": "S problémami a návrhmi sa obráťte na <a id=\"support_page\" href=\"#\" target=\"_blank\">Stránku podpory Internetového obchodu</a> alebo emailom na looperforyoutube@alvinhkh.com (v angličtine)"
-    }, 
+    },  
     "text_tweet": {
         "message": "Automatické opakovanie pre YouTube - skvelý doplnok pre Chrome, s ktorým je opakovanie videí hračka."
     }, 

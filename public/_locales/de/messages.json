@@ -190,11 +190,7 @@
     "text_refresh_page": {
         "description": "After options are saved, refresh and open YouTube page.", 
         "message": "Nach dem Speichern, lade und öffne die YouTube Seite neu"
-    }, 
-    "text_support": {
-        "description": "please keep those html tags", 
-        "message": "Bitte melde alle Probleme oder Vorschläge auf der <a id=\"support_page\" href=\"#\" target=\"_blank\">Support Seite im Chrome Web Store</a> oder schreibe ein E-Mail an looperforyoutube@alvinhkh.com (in Englisch)"
-    }, 
+    },  
     "text_tweet": {
         "description": "maximum 100 characters", 
         "message": "Looper for YouTube, tolle Chrome Erweiterung um Videos mit einem Klick zu wiederholen"

@@ -168,10 +168,7 @@
     }, 
     "text_refresh_page": {
         "message": "Après avoir sauvegardé vos options, refraîchissez la page YouTube."
-    }, 
-    "text_support": {
-        "message": "Un problème ? Une suggestion ? RDV sur la <a id='support_page' href='#' target='_blank'>Page d'Aide du CWS</a> ou envoyez un mail à looperforyoutube@alvinhkh.com (en anglais)"
-    }, 
+    },  
     "text_tweet": {
         "message": "Looper for YouTube, super extension Chrome qui permet de lire en boucle les vidéos en un seul clic."
     }, 
