@@ -1,0 +1,322 @@
+/*
+ * Looper for YouTube
+ * http://www.alvinhkh.com/looperforyoutube
+ * Copyright (c) 2011-2026, AlvinHKH
+ * http://alvinhkh.com
+ * All rights reserved.
+ */
+
+.loop-button {
+  padding: 0;
+  color: var(--yt-icon-color);
+  box-shadow: none;
+  outline: none;
+}
+.loop-button label.auto {
+  display: none;
+  position: absolute;
+  color: #000;
+  font-size: 10px;
+  right: -3px;
+  bottom: -2px;
+}
+.loop-button label.enabled {
+  display: none;
+  position: absolute;
+  color: #808080;
+  font-weight: bold;
+  font-size: 12px;
+  right: -3px;
+  bottom: -2px;
+}
+.loop-button label.disabled {
+  display: inline;
+  font-weight: 900;
+  position: relative;
+  font-size: 10px;
+  left: 2px;
+  top: 1px;
+}
+.loop-button.loop-auto label.auto {
+  display: inline
+}
+.loop-button:not(.loop-auto) label.auto {
+  display: none
+}
+.loop-button.loop-disabled label.disabled {
+  display: inline
+}
+.loop-button:not(.loop-disabled) label.disabled {
+  display: none
+}
+.loop-button.loop-enabled:not(.loop-auto) label.enabled {
+  display: inline
+}
+.loop-button:not(.loop-enabled) label.enabled {
+  display: none
+}
+.loop-button.loop-auto label.disabled {
+  top: 0;
+}
+.loop-button.button-show-icon .icon-container {
+  display: inline-block
+}
+.loop-button:not(.button-show-icon) .icon-container,
+.loop-button:not(.button-show-icon) .ytSpecButtonShapeNextIcon {
+  display: none
+}
+.loop-button.button-show-text .ytSpecButtonShapeNextButtonTextContent {
+  display: block
+}
+.loop-button:not(.button-show-text) .ytSpecButtonShapeNextButtonTextContent {
+  display: none
+}
+@media screen and (max-width: 656px) {
+  .loop-button:not(.button-show-icon) .icon-container {
+    display: inline-block
+  }
+}
+.hid {
+  display: none;
+}
+.loop-panel-optionslink-container {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.loop-panel-optionslink-container a {
+  color: var(--yt-secondary-text-color, #999);
+}
+.loop-panel-info-container {
+  display: block;
+  margin: 0 15px 10px;
+  font-weight: bold;
+}
+.loop-panel-count-container, 
+.loop-panel-timer-container,
+.loop-panel-portion-container {
+  display: inline-block;
+  margin: 0 15px;
+  min-height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+.loop-panel-count-container .yt-uix-form-input-text,
+.loop-panel-timer-container .yt-uix-form-input-text,
+.loop-panel-portion-container .yt-uix-form-input-text {
+  width: 30px;
+  text-align: center;
+  border: 0;
+  font-size: 1.2em
+}
+.loop-panel-portion-container .yt-uix-form-input-text {
+  width: 60px;
+}
+.loop-panel-end-container {
+  display: inline-block;
+  margin: 0 18px;
+  min-height: 40px;
+}
+.loop-panel-end-container button {
+  min-height: 29px;
+  margin-right: 8px;
+}
+.loop-panel-slider-container {
+  padding-top: 5px;
+  margin: 0 25px 30px;
+}
+.loop-slider {
+  height: 9px;
+  position: relative;
+  background-color: #2A2A2A;
+  padding-left: 6px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.loop-slider-padding {
+  position: relative;
+  z-index: 9;
+  width: auto;
+  height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  right: initial;
+  background-color: #777;
+}
+.loop-slider-pointer {
+  border: 5px solid #eaeaea;
+  background-color: #eaeaea;
+  height: 6px;
+  width: 6px;
+  z-index: 941;
+  top: -4px;
+  position: absolute;
+  cursor: move;
+  margin-left: -8px;
+  border-radius: 8px;
+}
+.loop-slider-pointer:active, .loop-slider-pointer:hover,
+.loop-slider-tooltip:active + .loop-slider-pointer, .loop-slider-tooltip:hover + .loop-slider-pointer {
+  background-color: #cc181e;
+  border-color: #cc181e;
+}
+.loop-slider-pointer.slider-start {
+  left: 0;
+  right: initial;
+}
+.loop-slider-pointer.slider-end {
+  left: initial;
+  right: -8px;
+}
+.loop-slider-arrow {
+  left: 22px;
+  top: -5px;
+  border-bottom: 5px solid #444;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+}
+.loop-slider-timestamp {
+  display: block;
+  width: 50px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  line-height: 20px;
+  color: #E3E3E3 !important;
+  text-align: center;
+  border: 0;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.loop-slider-tooltip {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background-color: #444;
+  border-radius: 4px;
+  margin: 0;
+  padding: 2px;
+  overflow: visible;
+  cursor: pointer;
+  top: 16px;
+}
+.loop-slider-tooltip.slider-start {
+  left: -27px;
+  right: initial;
+}
+.loop-slider-tooltip.slider-end {
+  left: initial;
+  right: -27px;
+}
+
+
+.loop-button yt-formatted-string {
+  text-align: center;
+  margin: 0 auto;
+  line-height: 20px;
+}
+.loop-button.loop-enabled #text {
+  color: hsl(3, 81.8%, 49.6%);
+}
+
+.loop-button:not(.button-show-icon) #text {
+  line-height: 36px;
+}
+.loop-button .icon-container {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.loop-button .label-container {
+  position: absolute;
+  bottom: 6px;
+  right: 3px;
+}
+.loop-button .label-container label {
+  color: inherit;
+}
+.loop-panel {
+  display: none;
+  position: relative;
+  color: var(--yt-spec-text-primary);
+}
+.ytl-2026 .loop-panel {
+  position: relative;
+  border-radius: 12px;
+  background: var(--yt-spec-badge-chip-background, var(--yt-spec-raised-background));
+  --ytd-text-inline-expander-button-color: var(--yt-spec-text-primary);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+  padding: 12px;
+  flex: 1;
+}
+.ytl-2026 ytd-watch-metadata[modern-metapanel-order] .loop-panel {
+  width: 100%;
+}
+.loop-panel a {
+  text-decoration: none;
+}
+.loop-panel input {
+  background-color: inherit;
+  color: var(--yt-spec-text-primary);
+  border-color: var(--yt-border-color);
+}
+.loop-panel #loop-count-end {
+  color: var(--yt-disabled-text-color);
+}
+.loop-panel #loop-count-end .active {
+  color: hsl(3, 81.8%, 49.6%);
+}
+.loop-panel .loop-panel-info-container,
+.loop-panel .loop-panel-optionslink-container {
+  font-weight: 400;
+  text-transform: none;
+}
+.ytl-2026 .loop-panel .loop-panel-info-container,
+.ytl-2026 .loop-panel .loop-panel-optionslink-container {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+.ytl-2026 .loop-panel .loop-panel-optionslink-container {
+  right: 10px;
+  top: 15px;
+}
+.loop-panel .loop-panel-slider-container {
+  margin: 0 31px 32px 26px;
+  padding-top: 6px;
+}
+.loop-panel #checkbox.checked.tp-yt-paper-checkbox {
+  background-color: hsl(3, 81.8%, 49.6%);
+  border-color: hsl(3, 81.8%, 49.6%);
+}
+
+.loop-button .yt-icon {
+  width: var(--yt-icon-button-icon-width, 100%);
+  height: var(--yt-icon-button-icon-height, 100%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' preserveAspectRatio='xMidYMid meet' focusable='false' class='style-scope yt-icon' style='pointer-events: none; display: block; width: 100%25; height: 100%25; fill: currentcolor;'%3E%3Cg class='style-scope yt-icon'%3E%3Cpath d='M21,13h1v5L3.93,18.03l2.62,2.62l-0.71,0.71L1.99,17.5l3.85-3.85l0.71,0.71l-2.67,2.67L21,17V13z M3,7l17.12-0.03 l-2.67,2.67l0.71,0.71l3.85-3.85l-3.85-3.85l-0.71,0.71l2.62,2.62L2,6v5h1V7z' class='style-scope yt-icon'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+/*
+ * Layout only: the wrapper is a plain <div> (see src/ui/button.js) so YouTube's
+ * Polymer can't re-render over it. The pill itself is styled by YouTube's own
+ * `ytSpecButtonShapeNext*` classes on the inner <button>.
+ */
+.loop-button {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  flex: 0 0 auto;
+  margin: 0;
+}
+.loop-button > button {
+  white-space: nowrap;
+  cursor: pointer;
+}
